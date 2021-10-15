@@ -1,0 +1,31 @@
+{
+  "name": "matilliontests",
+  "version": "1.0.0",
+  "description": "UI tests for Matillion",
+  "main": "index.js",
+  "scripts": {
+    "cy-open": "npx cypress open --browser chrome",
+    "cy-chrome": "npx cypress run --browser chrome",
+    "merge-reports": "mochawesome-merge mochawesome-report/*.json > cypress-tests-report.json",
+    "clean-reports": "rimraf mochawesome-report/",
+    "create-html-report": "marge --reportDir TestReport cypress-tests-report.json",
+    "generate-html-report": "npm run merge-reports && npm run create-html-report",
+    "tests-with-report": "npm run clean-reports && npm run cy-chrome && npm run generate-html-report"
+  },
+  "author": "Vaibhavkumar Bhatt",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "8.6.0",
+    "cypress-multi-reporters": "1.5.0",
+    "mocha": "9.1.2",
+    "mochawesome": "6.3.1",
+    "mochawesome-merge": "4.2.0",
+    "mochawesome-report-generator": "5.2.0"
+  },
+  "dependencies": {
+    "eslint": "8.0.1",
+    "eslint-plugin-cypress": "2.12.1",
+    "gitignore": "0.7.0",
+    "rimraf": "3.0.2"
+  }
+}

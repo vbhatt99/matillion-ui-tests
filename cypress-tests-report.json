@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-15T08:01:55.790Z",
+    "end": "2021-10-15T08:02:08.612Z",
+    "duration": 7359,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fed2de19-6d7e-4007-b94a-5519158c27a3",
+      "title": "",
+      "fullFile": "cypress/integration/tests/login_spec.js",
+      "file": "cypress/integration/tests/login_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d369869c-935b-46e9-a349-5b4a34024320",
+          "title": "Using page object style for login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Page tests with valid credentials",
+              "fullTitle": "Using page object style for login page Login Page tests with valid credentials",
+              "timedOut": null,
+              "duration": 1449,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _login.visitLoginPage)();\n(0, _login.verifyPageTitle)('Matillion: Automation Test App');\n(0, _login.verifyPageHeader)('Sign in');\n(0, _login.enterUsername)('l.jenkins');\n(0, _login.enterPassword)('hunter2');\n(0, _login.submitForm)();\n(0, _login.verifyPageTitle)('Matillion: Automation Test App');\n(0, _login.verifyPageHeader)('Feedback Form');",
+              "err": {},
+              "uuid": "31350e4f-d83e-4ff7-ad75-6f7e23f985da",
+              "parentUUID": "d369869c-935b-46e9-a349-5b4a34024320",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31350e4f-d83e-4ff7-ad75-6f7e23f985da"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1449,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "52e4a90b-4ca8-4754-b700-e4f30d5b1d6f",
+          "title": "Using fixture for login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate successful login",
+              "fullTitle": "Using fixture for login page Validate successful login",
+              "timedOut": null,
+              "duration": 1075,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _login.visitLoginPage)();\n(0, _login.enterUsername)(this.logindata.username);\n(0, _login.enterPassword)(this.logindata.password);\n(0, _login.submitForm)();\n(0, _login.verifyPageTitle)('Matillion: Automation Test App');\n(0, _login.verifyPageHeader)('Feedback Form');",
+              "err": {},
+              "uuid": "23aceab0-a3c6-46e7-88f3-12f5909847f3",
+              "parentUUID": "52e4a90b-4ca8-4754-b700-e4f30d5b1d6f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "23aceab0-a3c6-46e7-88f3-12f5909847f3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1075,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "00b3861f-17bd-4709-a2db-6170a5df656e",
+      "title": "",
+      "fullFile": "cypress/integration/tests/feedback_form_spec.js",
+      "file": "cypress/integration/tests/feedback_form_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fbbd4167-1715-40e7-90bb-caa164eb23c9",
+          "title": "Feedback Form test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Feedback form functional tests",
+              "fullTitle": "Feedback Form test suite Feedback form functional tests",
+              "timedOut": null,
+              "duration": 4835,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _login.visitLoginPage)();\n(0, _login.enterUsername)(this.logindata.username);\n(0, _login.enterPassword)(this.logindata.password);\n(0, _login.submitForm)();\n(0, _login.verifyPageHeader)('Feedback Form');\n(0, _feedbackForm.enterFirstname)(this.feedback.firstname);\n(0, _feedbackForm.enterLastname)(this.feedback.lastname);\n(0, _feedbackForm.enterEmail)(this.feedback.email);\n(0, _feedbackForm.enterPhoneNumber)(this.feedback.phone);\n(0, _feedbackForm.enterCompanyName)(this.feedback.company);\n(0, _feedbackForm.enterPostcode)(this.feedback.postcode);\n(0, _feedbackForm.selectPriority)(this.feedback.priority);\n(0, _feedbackForm.enterYourFeedback)(this.feedback.yourFeedback);",
+              "err": {},
+              "uuid": "b772f8f0-f607-4d10-ade3-3d021cdc17a5",
+              "parentUUID": "fbbd4167-1715-40e7-90bb-caa164eb23c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b772f8f0-f607-4d10-ade3-3d021cdc17a5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4835,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

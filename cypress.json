@@ -1,0 +1,16 @@
+{
+    "baseUrl": "https://www.matillion-automation-test.com/",
+    "integrationFolder": "cypress/integration/tests",
+    "chromeWebSecurity": false,
+    "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+    },
+    "screenshotsFolder": "TestReport/assets",
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    }
+}
